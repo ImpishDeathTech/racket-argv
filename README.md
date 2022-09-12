@@ -16,9 +16,9 @@ If called as just `(argv)` the function will return the entire vector.
 (require argv)
 
 (for/arg (value)
-  (printf "~v\n" value))
+  (printf "arg = ~v\n" value))
 
-(printf "~a\n" (argv))
+(printf "argv = ~a\n" (argv))
 ```
 
 Otherwise, unlike other argvs, this argv iterates from zero, like `current-command-line arguments`
