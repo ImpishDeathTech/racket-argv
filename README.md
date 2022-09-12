@@ -13,6 +13,8 @@ Install it like any other racket package and `(require argv)`, there's nothing s
 
 If called as just `(argv)` the function will return the entire vector. 
 ```scm
+; put this code in a file, and execute with any number of arguments
+
 (require argv)
 
 (for/arg (value)
