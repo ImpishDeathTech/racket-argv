@@ -1,11 +1,14 @@
 # racket-argv
 #### A cleaner, more compact way of dealing with current-command-line-arguments in Racket/PLT Scheme
 
-The name itself says it all - we don't have `(argv number)`
+The name itself says it all - we don't have `(argv 1)`
 in scheme, we have 
 ```scm
-(vector-ref (current-command-line-arguments) number)
+(vector-ref (current-command-line-arguments) 0)
 ```
 
 So I decided to define an easier way of interacting with it, a way most programmers are used to: argv!
 Install it like any other racket package, there's nothing special going on here ;3
+If called as just `(argv)` the function will return the entire vector. Otherwise, unlike other argvs, 
+This argv iterates from zero, like 
+`current-command-line arguments`
