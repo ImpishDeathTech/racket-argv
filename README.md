@@ -3,7 +3,7 @@
 
 The name itself says it all - we don't have `(argv number)`
 in scheme, we have 
-```racket
+```lisp
 (vector-ref (current-command-line-arguments) number)
 ```
 
