@@ -11,6 +11,14 @@ So I decided to define an easier way of interacting with it, a way most programm
 
 Install it like any other racket package and `(require argv)`, there's nothing special going on here ;3
 
-If called as just `(argv)` the function will return the entire vector. Otherwise, unlike other argvs, 
+If called as just `(argv)` the function will return the entire vector. 
+```scm
+(require argv)
 
-this argv iterates from zero, like `current-command-line arguments`
+(for/arg (value)
+  (printf "~v\n" value))
+
+(printf "~a\n" (argv))
+```
+
+Otherwise, unlike other argvs, this argv iterates from zero, like `current-command-line arguments`
