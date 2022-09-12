@@ -2,9 +2,7 @@
 
 (require racket/vector)
 
-(provide argv-length
-         argv-empty?
-         argv)
+(provide (all-defined-out))
 
 
 (define (argv-length)
