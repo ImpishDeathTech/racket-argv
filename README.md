@@ -8,7 +8,9 @@ in scheme, we have
 ```
 
 So I decided to define an easier way of interacting with it, a way most programmers are used to: argv!
-Install it like any other racket package, there's nothing special going on here ;3
+
+Install it like any other racket package and `(require argv)`, there's nothing special going on here ;3
+
 If called as just `(argv)` the function will return the entire vector. Otherwise, unlike other argvs, 
 This argv iterates from zero, like 
 `current-command-line arguments`
