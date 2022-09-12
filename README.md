@@ -12,5 +12,5 @@ So I decided to define an easier way of interacting with it, a way most programm
 Install it like any other racket package and `(require argv)`, there's nothing special going on here ;3
 
 If called as just `(argv)` the function will return the entire vector. Otherwise, unlike other argvs, 
-This argv iterates from zero, like 
-`current-command-line arguments`
+
+this argv iterates from zero, like `current-command-line arguments`
