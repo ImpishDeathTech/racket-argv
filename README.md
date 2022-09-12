@@ -3,7 +3,7 @@
 
 The name itself says it all - we don't have `(argv number)`
 in scheme, we have 
-```scm 
+```racket
 (vector-ref (current-command-line-arguments) number)
 ```
 
